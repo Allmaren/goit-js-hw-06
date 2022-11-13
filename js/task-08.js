@@ -4,7 +4,7 @@ formEl.addEventListener("submit", fieldsCheck);
 
 function fieldsCheck(event) {
   event.preventDefault();
-  /*
+
   const formElements = event.currentTarget.elements;
   const email = formElements.email.value;
   const password = formElements.password.value;
@@ -20,9 +20,9 @@ function fieldsCheck(event) {
   };
   console.log(formData);
   formEl.reset();
-*/
-  const formData = new FormData(event.currentTarget);
-  formData.forEach((value, name) => {
-    console.log(name, ":", value);
-  });
+
+  //   const formData = new FormData(event.currentTarget);
+  //   formData.forEach((value, name) => {
+  //     console.log(name, ":", value);
+  //   });
 }
